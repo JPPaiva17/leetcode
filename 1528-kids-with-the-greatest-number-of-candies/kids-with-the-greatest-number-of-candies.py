@@ -1,11 +1,12 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         maxCandies = max(candies)
-        result = []
+        booleanArray = []
         for i in range(len(candies)):
             if candies[i] + extraCandies >= maxCandies:
-                result.append(True)
+                booleanArray.append(True)
             else:
-                result.append(False)
-        return result
-        
+                booleanArray.append(False)
+        return booleanArray
+
+            
